@@ -55,19 +55,23 @@ app.get("/scrape", function(req, res) {
     //   var link = $(element).attr("href")
     //   console.log(link)
     // })
+    // document.querySelector("body > div:nth-child(6) > div.sc-2d2qtd-0.dmSVnl > main > div > div.sc-17uq8ex-0.ljcHun")
+    let results = [];
     
     $("article").each(function(i, element){
-      var link = $(element).children("a").attr("href");
-      console.log(link)
-      var title = $(element).children("a").text()
-      console.log(title)
-    })
+      let result = {};
+      
+      result.title = $(this)
+      .find("a")
+      .children("h1")
+      .text();
 
-    // $(".sc-3kpz01-7").each(function(i, element){
-    //   // var title = $(element).children("a").text();
-    //   var link = $(element).children("a").attr("href");
-    //   console.log(link)
-    //   console.log(title)
-    // })
+      result.link = $(this)
+      .find("figure")
+      .children("a")
+      .attr("href")
+
+      console.log(result)
+    })
   })
 })
