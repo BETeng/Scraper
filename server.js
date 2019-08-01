@@ -6,8 +6,9 @@ const mongoose = require("mongoose");
 const exphbs = require("express-handlebars")
 const app = express();
 
-console.log("process.env.PORT = " + process.env.PORT);
 const PORT = process.env.PORT || 4000;
+console.log("process.env.PORT = " + process.env.PORT);
+console.log("PORT = " + PORT);
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));

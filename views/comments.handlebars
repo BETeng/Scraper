@@ -10,7 +10,7 @@
                     <div class="card-body">
                         <a href={{dbArticle.link}} target="_blank" class="card-title">{{dbArticle.title}}</a>
                         <br>
-                        <p>{{dbArticle.summary}}</p>
+                        {{!-- <p>{{dbArticle.summary}}</p> --}}
                     </div>
                 </div>
             </div>
@@ -38,8 +38,9 @@
                     <label for="body">Comment</label>
                     <input type="textarea" class="form-control" id="body">
                 </div>
-                <button type="submit" class="btn btn-primary" id="submitButton">Add Comment</button>
-                <a href="/" class="btn btn-primary">Back to Scraping</button>
+                <button type="submit" class="btn btn-warning" id="submitButton">Add Comment</button>
+              
+                <a href="/" class="btn btn-success">Back to Home</button>
             </form>
         </div>
 
@@ -47,4 +48,4 @@
 </div>
 
 
-<script type="text/javascript" src="/public/js/comment.js"></script>
+<script type="text/javascript" src="/assets/js/comment.js"></script>

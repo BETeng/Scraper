@@ -1,0 +1,22 @@
+body {
+  background-image: url("../images/farm.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  font-size: 2em;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 2 1 auto;
+}
+
+#scrape {
+  background-color: red;
+}
